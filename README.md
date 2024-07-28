@@ -16,34 +16,34 @@ pip install numpy
 # Gen data with DuckDB and NumPy and save to csv files
 Both scripts (DuckDB and NumPy versions) generate the following tables, each with a configurable number of rows:
 
-"intOne": Integer column with value 1
-"floatOne": Float column with value 1.0
-"intMillion": Integer column with value 1,000,000
-"countryCode": String column with value 'uk'
-"countryName": String column with value 'United Kingdom'
-"dateTimeCol": DateTime column with value '2023-07-28 12:34:56'
-"dateTimeMsCol": DateTime column with millisecond precision, value '2023-07-28 12:34:56.789'
-"dateTimeMsTimeZoneCol": DateTime column with millisecond precision and timezone, value '2023-07-28 12:34:56.789+00:00'
-"dateCol": Date column with value '2023-07-28'
-"unixTimestampCol": Integer column with Unix timestamp value corresponding to '2023-07-28 12:34:56'
-"combined_table": A single table containing all columns from the above tables
+- "intOne": Integer column with value 1
+- "floatOne": Float column with value 1.0
+- "intMillion": Integer column with value 1,000,000
+- "countryCode": String column with value 'uk'
+- "countryName": String column with value 'United Kingdom'
+- "dateTimeCol": DateTime column with value '2023-07-28 12:34:56'
+- "dateTimeMsCol": DateTime column with millisecond precision, value '2023-07-28 12:34:56.789'
+- "dateTimeMsTimeZoneCol": DateTime column with millisecond precision and timezone, value '2023-07-28 12:34:56.789+00:00'
+- "dateCol": Date column with value '2023-07-28'
+- "unixTimestampCol": Integer column with Unix timestamp value corresponding to '2023-07-28 12:34:56'
+- "combined_table": A single table containing all columns from the above tables
 
 For each table, the scripts:
 
-Generate the data
-Write the table to a CSV file
-Time how long the data generation and export takes
-Check the file sizes
+- Generate the data
+- Write the table to a CSV file
+- Time how long the data generation and export takes
+- Check the file sizes
 
 The scripts also create a stats table showing:
 
-Table name
-Column name
-Number of rows
-Data type
-Sample value
-File size (in bytes and MB)
-Generation time
+- Table name
+- Column name
+- Number of rows
+- Data type
+- Sample value
+- File size (in bytes and MB)
+- Generation time
 
 The stats are displayed in the console and saved to a 'stats.csv' file.
 
